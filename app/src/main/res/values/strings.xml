@@ -2,5 +2,6 @@
     <string name="app_name">新编日语教程</string>
     <string name="tab_title_passage">课文</string>
     <string name="tab_title_words">单词</string>
+    <string name="pageTitle_main_activity">新编日语教程</string>
 
 </resources>
