@@ -1,54 +1,21 @@
 package com.ipk.newbianjapanese;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
-    List<MyPageModel> layoutList = new ArrayList<>();
-    {
-        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage));
-        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_words));
-    }
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        tabLayout = this.<TabLayout>findViewById(R.id.tabLayout);
-        viewPager = this.<ViewPager>findViewById(R.id.viewPager);
-        init();
     }
 
-    private void init(){
-        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
-            @Override
-            public Fragment getItem(int position) {
-                Fragment fragment = MyFragment.newInstance(layoutList.get(position).layoutRes);
-                return fragment;
-            }
-
-            @Override
-            public CharSequence getPageTitle(int position) {
-                return getString(layoutList.get(position).titleRes);
-            }
-
-            @Override
-            public int getCount() {
-                return layoutList.size();
-            }
-        });
-
-        tabLayout.setupWithViewPager(viewPager);
-
+    public void onTouchButton(View v){
+        Intent intent = new Intent(this,LessonContentActivity.class);
+        startActivity(intent);
     }
 }
