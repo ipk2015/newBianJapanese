@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
     public void onTouchButton(View v){
         Intent intent = new Intent(this,LessonContentActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.in_from_right,R.anim.out_to_left);
     }
 }
