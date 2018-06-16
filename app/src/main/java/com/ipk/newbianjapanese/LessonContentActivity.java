@@ -12,6 +12,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.ipk.newbianjapanese.viewpager_lessonContent.MyFragment;
+import com.ipk.newbianjapanese.viewpager_lessonContent.MyPageModel;
+
 import java.util.ArrayList;
 import java.util.List;
 

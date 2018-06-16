@@ -1,8 +1,10 @@
-package com.ipk.newbianjapanese;
+package com.ipk.newbianjapanese.viewpager_lessonContent;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.ipk.newbianjapanese.R;
 
 import java.util.ArrayList;
 import java.util.List;

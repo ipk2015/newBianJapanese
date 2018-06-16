@@ -1,9 +1,11 @@
-package com.ipk.newbianjapanese;
+package com.ipk.newbianjapanese.recyclerView_unit;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.ipk.newbianjapanese.R;
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter {
 
