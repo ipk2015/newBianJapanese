@@ -10,8 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.ipk.newbianjapanese.bean.SimpleClassInfo;
 import com.ipk.newbianjapanese.viewpager_lessonContent.MyFragment;
 import com.ipk.newbianjapanese.viewpager_lessonContent.MyPageModel;
 
@@ -23,6 +26,8 @@ public class LessonContentActivity extends AppCompatActivity {
     private ViewPager viewPager;
     List<MyPageModel> layoutList = new ArrayList<>();
     private Toolbar toolBar_lesson;
+    private SimpleClassInfo mSimpleClassInfo;
+    private TextView textView_lessonTitle;
 
     {
         layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage));
@@ -35,8 +40,13 @@ public class LessonContentActivity extends AppCompatActivity {
         toolBar_lesson = this.<Toolbar>findViewById(R.id.toolBar_lesson);
         tabLayout = this.<TabLayout>findViewById(R.id.tabLayout);
         viewPager = this.<ViewPager>findViewById(R.id.viewPager);
+        textView_lessonTitle = (TextView) toolBar_lesson.findViewById(R.id.textView_toolbar_title_lesson);
+
         initToolbar();
         initTabLayout();
+        String stringExtra = getIntent().getStringExtra(MainActivity.Intent_extra_class_info);
+        mSimpleClassInfo = new Gson().fromJson(stringExtra, SimpleClassInfo.class);
+        textView_lessonTitle.setText(mSimpleClassInfo.getClassTitle());
     }
     private void initToolbar(){
         setSupportActionBar(toolBar_lesson);

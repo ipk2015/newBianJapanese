@@ -1,70 +1,64 @@
 package com.ipk.newbianjapanese.bean;
 
 public class SimpleClassInfo {
-    public int mUnitIndex;  //第几个单元
-    public int mClassIndex; //单元里第几课
-    public String mClassTitle; //课的标题
-    public String mUnitTitle; //单元的标题
-    public int mGroupLength; //所在单元的课的个数
+    public int unitIndex;  //第几个单元
+    public int classIndex; //单元里第几课
+    public String classTitle; //课的标题
+    public String unitTitle; //单元的标题
+    public int groupLength; //所在单元的课的个数
 
-
-    public int getmGroupLength() {
-        return mGroupLength;
-    }
-
-    public void setmGroupLength(int mGroupLength) {
-        this.mGroupLength = mGroupLength;
-    }
-
-
-    public String getUnitTitle() {
-        return mUnitTitle;
-    }
-
-    public void setUnitTitle(String mUnitTitle) {
-        this.mUnitTitle = mUnitTitle;
-    }
-
-
-    public SimpleClassInfo(){
-
-    }
-    public SimpleClassInfo(int mUnitIndex, int mClassIndex,int mGroupLength, String mUnitTitle,String mClassTitle) {
-        this.mUnitIndex = mUnitIndex;
-        this.mClassIndex = mClassIndex;
-        this.mClassTitle = mClassTitle;
-        this.mUnitTitle = mUnitTitle;
-        this.mGroupLength = mGroupLength;
+    public SimpleClassInfo(int unitIndex, int classIndex, String classTitle, String unitTitle, int groupLength) {
+        this.unitIndex = unitIndex;
+        this.classIndex = classIndex;
+        this.classTitle = classTitle;
+        this.unitTitle = unitTitle;
+        this.groupLength = groupLength;
     }
 
     public int getUnitIndex() {
-        return mUnitIndex;
+        return unitIndex;
     }
 
-    public void setUnitIndex(int mUnitIndex) {
-        this.mUnitIndex = mUnitIndex;
+    public void setUnitIndex(int unitIndex) {
+        this.unitIndex = unitIndex;
     }
 
     public int getClassIndex() {
-        return mClassIndex;
+        return classIndex;
     }
 
-    public void setClassIndex(int mClassIndex) {
-        this.mClassIndex = mClassIndex;
+    public void setClassIndex(int classIndex) {
+        this.classIndex = classIndex;
     }
 
     public String getClassTitle() {
-        return mClassTitle;
+        return classTitle;
     }
 
-    public void setClassTitle(String mClassTitle) {
-        this.mClassTitle = mClassTitle;
+    public void setClassTitle(String classTitle) {
+        this.classTitle = classTitle;
+    }
+
+    public String getUnitTitle() {
+        return unitTitle;
+    }
+
+    public void setUnitTitle(String unitTitle) {
+        this.unitTitle = unitTitle;
+    }
+
+    public int getGroupLength() {
+        return groupLength;
+    }
+
+    public void setGroupLength(int groupLength) {
+        this.groupLength = groupLength;
     }
 
     public boolean isFirstClassInUnit(){
-        return mClassIndex == 0;
+        return classIndex == 0;
     }
     public boolean isLastClassInUnit(){
-        return mClassIndex == mGroupLength-1;
+        return classIndex == groupLength-1;
     }
 }
