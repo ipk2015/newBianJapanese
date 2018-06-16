@@ -6,8 +6,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.ipk.newbianjapanese.R;
+import com.ipk.newbianjapanese.bean.SimpleClassInfo;
 
-public class MyRecyclerViewAdapter extends RecyclerView.Adapter {
+import java.util.List;
+
+public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public TextView mTextView;
@@ -17,8 +20,8 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter {
         }
     }
 
-    private String[] mDataset;
-    public MyRecyclerViewAdapter(String[] myDateset){
+    public List<SimpleClassInfo> mDataset;
+    public MyRecyclerViewAdapter(List<SimpleClassInfo> myDateset){
         mDataset = myDateset;
     }
 
@@ -30,8 +33,8 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        ((ViewHolder)holder).mTextView.setText(mDataset[position]);
+    public void onBindViewHolder(MyRecyclerViewAdapter.ViewHolder holder, int position) {
+        holder.mTextView.setText(mDataset.get(position).getClassTitle());
     }
 
 //    @Override
@@ -41,6 +44,6 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mDataset.size();
     }
 }
