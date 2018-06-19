@@ -15,7 +15,7 @@ public class UnitClassDecoration extends RecyclerView.ItemDecoration {
 
 
     private final int mFontColor;
-
+    private Paint.FontMetrics mFontMetrics;
     public interface SimpleClassInfoCallback {
         SimpleClassInfo getSimpleClassInfo(int position);
     }
@@ -43,6 +43,7 @@ public class UnitClassDecoration extends RecyclerView.ItemDecoration {
         mTextPaint = new Paint();
         mTextPaint.setColor(mFontColor);
         mTextPaint.setTextSize(mUnitTextSize);
+        mFontMetrics = mTextPaint.getFontMetrics();
     }
 
     @Override
@@ -50,10 +51,10 @@ public class UnitClassDecoration extends RecyclerView.ItemDecoration {
         super.getItemOffsets(outRect, view, parent, state);
         int position = parent.getChildAdapterPosition(view);
         int index = parent.indexOfChild(view);
-        //        Log.e("fyp-rect",position+"");
+
         if (null != mCallback) {
             SimpleClassInfo simpleClassInfo = mCallback.getSimpleClassInfo(position);
-            if (null != simpleClassInfo && (simpleClassInfo.isFirstClassInUnit() || index == 0)) {
+            if (null != simpleClassInfo && simpleClassInfo.isFirstClassInUnit()) {
                 outRect.top = (int) mHeaderHeight;
             } else {
                 outRect.top = (int) mDividerHeight;
@@ -107,7 +108,7 @@ public class UnitClassDecoration extends RecyclerView.ItemDecoration {
     private void drawHeader(Canvas c,int left,int top,int right,int bottom,SimpleClassInfo simpleClassInfo){
         c.drawRect(left, top, right, bottom, mPaint);
         float textX = left + mOffsetTextLeft;
-        float textY = bottom;
+        float textY = bottom - mFontMetrics.descent;
         c.drawText(simpleClassInfo.getUnitTitle(), textX, textY, mTextPaint);
     }
 }
