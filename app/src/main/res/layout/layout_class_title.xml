@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
           android:layout_width="match_parent"
-          android:layout_height="50dp"
-          android:background="#ff0000"
+          android:layout_height="@dimen/class_title_height_list"
           android:gravity="center_vertical"
+          android:background="@android:color/white"
           android:id="@+id/linearLayout_classTitle">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#0000bb"
-        android:textSize="20sp"
+        android:textSize="@dimen/class_title_size_list"
+        android:layout_marginLeft="@dimen/unit_title_margin_left"
         android:id="@+id/textView_classTitle"/>
 </LinearLayout>

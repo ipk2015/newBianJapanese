@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="border_unit_class">2px</dimen>
+    <dimen name="border_unit_class">5dp</dimen>
     <dimen name="unit_title_height">50dp</dimen>
-    <dimen name="unit_title_margin_left">5dp</dimen>
+    <dimen name="unit_title_margin_left">10dp</dimen>
     <dimen name="unit_title_size">20sp</dimen>
+    <dimen name="class_title_size_list">20sp</dimen>
+    <dimen name="class_title_height_list">50dp</dimen>
+
 </resources>

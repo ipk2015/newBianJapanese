@@ -6,5 +6,7 @@
     <color name="mainBgColor">#eff1f5</color>
     <color name="borderColor">#dddddd</color>
     <color name="formFontColor">#333333</color>
+    <color name="mainBlueColor">#198bff</color>
+    <color name="mainYellowColor">#00FF99</color>
 
 </resources>

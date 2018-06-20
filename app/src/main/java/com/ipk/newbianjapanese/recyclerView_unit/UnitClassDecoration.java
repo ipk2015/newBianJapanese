@@ -2,7 +2,6 @@ package com.ipk.newbianjapanese.recyclerView_unit;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
@@ -39,7 +38,7 @@ public class UnitClassDecoration extends RecyclerView.ItemDecoration {
         mFontColor = context.getResources().getColor(R.color.formFontColor);
 
         mPaint = new Paint();
-        mPaint.setColor(Color.YELLOW);
+        mPaint.setColor(context.getResources().getColor(R.color.mainYellowColor));
         mTextPaint = new Paint();
         mTextPaint.setColor(mFontColor);
         mTextPaint.setTextSize(mUnitTextSize);
@@ -108,7 +107,7 @@ public class UnitClassDecoration extends RecyclerView.ItemDecoration {
     private void drawHeader(Canvas c,int left,int top,int right,int bottom,SimpleClassInfo simpleClassInfo){
         c.drawRect(left, top, right, bottom, mPaint);
         float textX = left + mOffsetTextLeft;
-        float textY = bottom - mFontMetrics.descent;
+        float textY = bottom-mFontMetrics.descent-(mHeaderHeight - (mFontMetrics.bottom-mFontMetrics.top))/2;
         c.drawText(simpleClassInfo.getUnitTitle(), textX, textY, mTextPaint);
     }
 }
