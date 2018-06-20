@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -25,12 +26,15 @@ public class MainActivity extends AppCompatActivity implements MyRecyclerViewAda
     private RecyclerView recyclerView;
     private LinearLayoutManager mLinearLayoutManager;
     private List<SimpleClassInfo> mDataset;
+    private TextView textView_toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = this.<Toolbar>findViewById(R.id.toolBar1);
+        textView_toolbar = (TextView)toolbar.findViewById(R.id.toolbar_title);
+        textView_toolbar.setText(R.string.app_name);
         recyclerView = this.<RecyclerView>findViewById(R.id.recyclerView);
         initRecyclerView();
     }
