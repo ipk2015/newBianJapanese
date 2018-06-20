@@ -67,6 +67,9 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     @Override
     public int getItemCount() {
-        return mDataset.size();
+        if(null != mDataset){
+            return mDataset.size();
+        }
+        return 0;
     }
 }

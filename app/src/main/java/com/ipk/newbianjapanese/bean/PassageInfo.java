@@ -4,7 +4,7 @@ public class PassageInfo {
     public String passage;
     public String talkContent;
     public String talkName;
-    public int type;//0为passage,1为talk
+    public int type;//0为talk,1为passage
 
     public PassageInfo() {
     }
