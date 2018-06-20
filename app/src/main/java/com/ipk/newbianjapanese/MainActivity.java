@@ -8,7 +8,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -68,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements MyRecyclerViewAda
 
     @Override
     public void onItemClick(int position) {
-        Toast.makeText(this,"view"+position,Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,"view"+position,Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this,LessonContentActivity.class);
         SimpleClassInfo simpleClassInfo = mDataset.get(position);
         intent.putExtra(Intent_extra_class_info,new Gson().toJson(simpleClassInfo));

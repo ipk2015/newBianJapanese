@@ -28,6 +28,7 @@ public class LessonContentActivity extends AppCompatActivity {
     private Toolbar toolBar_lesson;
     private SimpleClassInfo mSimpleClassInfo;
     private TextView textView_lessonTitle;
+    private TextView textView_content_layout_passage;
 
     {
         layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage));
