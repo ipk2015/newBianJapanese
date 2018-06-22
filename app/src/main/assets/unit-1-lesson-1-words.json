@@ -12,21 +12,87 @@
     "meaning":""
   },
   {
-    "writing":"わたい",
-    "tone":"①",
-    "pos":"[代]",
-    "meaning":"我"
+    "writing":"王（おう）",
+    "tone":"１",
+    "pos":"名（専）",
+    "meaning":""
   },
   {
-    "writing":"わたい",
-    "tone":"①",
-    "pos":"[代]",
-    "meaning":"我"
+    "writing":"〜さん",
+    "tone":"",
+    "pos":"接尾",
+    "meaning":""
   },
   {
-    "writing":"わたい",
-    "tone":"①",
-    "pos":"[代]",
-    "meaning":"我"
+    "writing":"中国人（ちゅうごくじん）",
+    "tone":"４",
+    "pos":"名",
+    "meaning":""
+  },
+  {
+    "writing":"佐藤（さとう）",
+    "tone":"１",
+    "pos":"名（専）",
+    "meaning":""
+  },
+  {
+    "writing":"先生（せ）",
+    "tone":"",
+    "pos":"",
+    "meaning":""
+  },
+  {
+    "writing":"",
+    "tone":"",
+    "pos":"",
+    "meaning":""
+  },
+  {
+    "writing":"",
+    "tone":"",
+    "pos":"",
+    "meaning":""
+  },
+  {
+    "writing":"",
+    "tone":"",
+    "pos":"",
+    "meaning":""
+  },
+  {
+    "writing":"",
+    "tone":"",
+    "pos":"",
+    "meaning":""
+  },{
+  "writing":"",
+  "tone":"",
+  "pos":"",
+  "meaning":""
+},{
+  "writing":"",
+  "tone":"",
+  "pos":"",
+  "meaning":""
+},
+  {
+    "writing":"",
+    "tone":"",
+    "pos":"",
+    "meaning":""
+  },
+  {
+    "writing":"",
+    "tone":"",
+    "pos":"",
+    "meaning":""
+  },
+  {
+    "writing":"",
+    "tone":"",
+    "pos":"",
+    "meaning":""
   }
+
+
 ]
