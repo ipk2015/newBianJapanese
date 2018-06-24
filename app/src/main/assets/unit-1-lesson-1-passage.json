@@ -1,32 +1,51 @@
 [
-    {
-      "type":"0",
-      "talkName":"晓东",
-      "talkContent":"第1課解放军付款即可将反馈及时快捷付快递费"
-    },
   {
-    "type":"0",
-    "talkName":"大话",
-    "talkContent":"第1課及实际付款撒"
+    "type":"１",
+    "passage":"（在学生会馆的一楼，铃木碰见了王小华，于是将旁边的丹尼尔和小金介绍给她认识。）"
   },
   {
     "type":"0",
-    "talkName":"尼玛",
-    "talkContent":"第1課拉斯积分卡经发局foe危机方面覅就无法if精加工我空间内给您如果我日价格可能减肥减肥"
+    "talkName":"鈴木",
+    "talkContent":"おうさん、こんにちは。"
   },
   {
     "type":"0",
-    "talkName":"呵呵呵哒",
-    "talkContent":"第1課紧挨背后我温暖你我IM看到你"
+    "talkName":"王小華",
+    "talkContent":"あっ、鈴木さん、こんにちは。"
   },
   {
     "type":"0",
-    "talkName":"欧阳觅剑",
-    "talkContent":"第1課福晶科技独守空房减肥呢"
+    "talkName":"鈴木",
+    "talkContent":"こちらは　キムさんと　ダニエルさんです。キムさんは　王さんの　ルームメートです。"
   },
   {
     "type":"0",
-    "talkName":"长公主",
-    "talkContent":"第1課手机覅我极为愤怒"
+    "talkName":"王小華",
+    "talkContent":"キムさん、ダニエルさん、はじめまして、わたしは　王小華です。どうぞ　よろしく　お願いします。"
+  },
+  {
+    "type":"0",
+    "talkName":"キム",
+    "talkContent":"はじめまして、キム・ソナです。こちらこそ　どうぞ　よろしく　お願いします。"
+  },
+  {
+    "type":"0",
+    "talkName":"ダニエル",
+    "talkContent":"あ、はじめまして、どうぞ　よろしく　お願いします。王さんも　韓国人ですか。"
+  },
+  {
+    "type":"0",
+    "talkName":"王小華",
+    "talkContent":"いいえ、違います。韓国人では　ありません。わたしは　中国人です。ダニエルさんは？"
+  },
+  {
+    "type":"0",
+    "talkName":"ダニエル",
+    "talkContent":"僕は　イギリス人です。王さんも　交換留学生ですか"
+  },
+  {
+    "type":"0",
+    "talkName":"王小華",
+    "talkContent":"はい、そうです。"
   }
 ]
