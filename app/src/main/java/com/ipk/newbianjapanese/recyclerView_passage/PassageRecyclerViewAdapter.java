@@ -1,7 +1,6 @@
 package com.ipk.newbianjapanese.recyclerView_passage;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +52,6 @@ public class PassageRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerVie
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        Log.e("fyp-onCreateViewHolder",viewType+"");
         if(viewType == 0){
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_itemview_talk, parent, false);
             TalkViewHolder talkViewHolder = new TalkViewHolder(view);

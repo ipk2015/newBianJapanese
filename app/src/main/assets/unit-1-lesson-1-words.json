@@ -6,16 +6,16 @@
       "meaning":"我"
     },
   {
-    "writing":"留学生（りゅうがくせい）",
+    "writing":"留学生(りゅうがくせい)",
     "tone":"３、4",
     "pos":"名",
     "meaning":"留学生"
   },
   {
-    "writing":"王（おう）",
+    "writing":"王(おう)",
     "tone":"１",
-    "pos":"名（専）",
-    "meaning":"王（姓氏）"
+    "pos":"名(専)",
+    "meaning":"王(姓氏)"
   },
   {
     "writing":"〜さん",
@@ -24,31 +24,31 @@
     "meaning":"对人的尊称"
   },
   {
-    "writing":"中国人（ちゅうごくじん）",
+    "writing":"中国人(ちゅうごくじん)",
     "tone":"４",
     "pos":"名",
     "meaning":"中国人"
   },
   {
-    "writing":"佐藤（さとう）",
-    "tonりe":"１",
-    "pos":"名（専）",
-    "meaning":"佐藤（姓氏）"
+    "writing":"佐藤(さとう)",
+    "tone":"１",
+    "pos":"名(専)",
+    "meaning":"佐藤(姓氏)"
   },
   {
-    "writing":"先生（せんせい）",
+    "writing":"先生(せんせい)",
     "tone":"３",
     "pos":"名",
     "meaning":"老师"
   },
   {
-    "writing":"李（り）",
+    "writing":"李(り)",
     "tone":"１",
-    "pos":"名（専）",
-    "meaning":"李（姓氏）"
+    "pos":"名(専)",
+    "meaning":"李(姓氏)"
   },
   {
-    "writing":"大学生（だいがくせい）",
+    "writing":"大学生(だいがくせい)",
     "tone":"３、４",
     "pos":"名",
     "meaning":"大学生"
@@ -70,7 +70,7 @@
   "pos":"嘆",
   "meaning":"不，不是"
 },{
-  "writing":"違います（ちがいます）",
+  "writing":"違います(ちがいます)",
   "tone":"４",
   "pos":"自動１",
   "meaning":"不是"
@@ -78,35 +78,35 @@
   {
     "writing":"ダニエル",
     "tone":"１",
-    "pos":"名（専）",
-    "meaning":"丹尼尔（人名）"
+    "pos":"名(専)",
+    "meaning":"丹尼尔(人名)"
   },
   {
-    "writing":"木村（きむら）",
+    "writing":"木村(きむら)",
     "tone":"０",
-    "pos":"名（専）",
-    "meaning":"木村（姓氏）"
+    "pos":"名(専)",
+    "meaning":"木村(姓氏)"
   },
   {
-    "writing":"鈴木（すずき）",
+    "writing":"鈴木(すずき)",
     "tone":"０",
-    "pos":"名（専）",
-    "meaning":"铃木（姓氏）"
+    "pos":"名(専)",
+    "meaning":"铃木(姓氏)"
   },
   {
-    "writing":"先輩（せんぱい）",
+    "writing":"先輩(せんぱい)",
     "tone":"０",
     "pos":"名",
     "meaning":"前辈，学长"
   },
   {
-    "writing":"小野（おの）",
+    "writing":"小野(おの)",
     "tone":"０",
-    "pos":"名（専）",
-    "meaning":"小野（姓氏）"
+    "pos":"名(専)",
+    "meaning":"小野(姓氏)"
   },
   {
-    "writing":"友だち（ともだち）",
+    "writing":"友だち(ともだち)",
     "tone":"０",
     "pos":"名",
     "meaning":"朋友"
@@ -118,16 +118,16 @@
     "meaning":"你好"
   },
   {
-    "writing":"王小華（おうしょうか）",
+    "writing":"王小華(おうしょうか)",
     "tone":"３",
-    "pos":"名（専）",
-    "meaning":"王小华（人名）"
+    "pos":"名(専)",
+    "meaning":"王小华(人名)"
   },
   {
     "writing":"あっ",
     "tone":"１",
     "pos":"嘆",
-    "meaning":"啊，呀（表示吃惊、感叹等）"
+    "meaning":"啊，呀(表示吃惊、感叹等)"
   },
   {
     "writing":"こちら",
@@ -138,8 +138,8 @@
   {
     "writing":"キム",
     "tone":"１",
-    "pos":"名（専）",
-    "meaning":"金（姓氏）"
+    "pos":"名(専)",
+    "meaning":"金(姓氏)"
   },
   {
     "writing":"ルームメート",
@@ -160,7 +160,7 @@
     "meaning":"请"
   },
   {
-    "writing":"よろしくお願いします（よろしくおねがいします）",
+    "writing":"よろしくお願いします(よろしくおねがいします)",
     "tone":"",
     "pos":"",
     "meaning":"请多关照，请多指教"
@@ -168,14 +168,14 @@
   {
     "writing":"キム・ソナ",
     "tone":"",
-    "pos":"名（専）",
-    "meaning":"金萱儿（人名）"
+    "pos":"名(専)",
+    "meaning":"金萱儿(人名)"
   },
   {
     "writing":"こちらこそ",
     "tone":"",
     "pos":"",
-    "meaning":"哪里哪里（我才要请您...）"
+    "meaning":"哪里哪里(我才要请您...)"
   },
   {
     "writing":"あ",
@@ -184,25 +184,25 @@
     "meaning":"啊"
   },
   {
-    "writing":"韓国人（かんこくじん）",
+    "writing":"韓国人(かんこくじん)",
     "tone":"４",
     "pos":"名",
     "meaning":"韩国人"
   },
   {
-    "writing":"僕（ぼく）",
+    "writing":"僕(ぼく)",
     "tone":"１",
     "pos":"代",
-    "meaning":"我（男性用）"
+    "meaning":"我(男性用)"
   },
   {
-    "writing":"イギリス人（イギリスじん）",
+    "writing":"イギリス人(イギリスじん)",
     "tone":"４",
     "pos":"名",
     "meaning":"英国人"
   },
   {
-    "writing":"交換留学生（こうかんりゅうがくせい）",
+    "writing":"交換留学生(こうかんりゅうがくせい)",
     "tone":"５、７、８",
     "pos":"名",
     "meaning":"交换留学生"

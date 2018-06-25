@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.ipk.newbianjapanese.Constants;
 import com.ipk.newbianjapanese.R;
 import com.ipk.newbianjapanese.bean.WordInfo;
 
@@ -40,8 +41,8 @@ public class WordsRecyclerViewAdapter extends RecyclerView.Adapter<WordsRecycler
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         WordInfo wordInfo = mDataList.get(position);
-        holder.writingTextView.setText(wordInfo.getWriting()+wordInfo.getTone());
-        holder.posTextView.setText(wordInfo.getPos());
+        holder.writingTextView.setText(wordInfo.getWriting()+ Constants.getToneByString(wordInfo.getTone()));
+        holder.posTextView.setText(Constants.addBrackets(wordInfo.getPos()));
         holder.meaningTextView.setText(wordInfo.getMeaning());
     }
 

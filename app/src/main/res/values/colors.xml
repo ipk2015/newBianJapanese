@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="mainBgColor">#eff1f5</color>
+    <color name="greyBgColor">#e4e4e4</color>
     <color name="borderColor">#dddddd</color>
     <color name="formFontColor">#333333</color>
     <color name="mainBlueColor">#198bff</color>
