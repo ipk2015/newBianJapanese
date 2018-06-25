@@ -17,6 +17,7 @@ import com.ipk.newbianjapanese.R;
 import com.ipk.newbianjapanese.bean.PassageInfo;
 import com.ipk.newbianjapanese.bean.WordInfo;
 import com.ipk.newbianjapanese.recyclerView_passage.PassageRecyclerViewAdapter;
+import com.ipk.newbianjapanese.recyclerView_words.WordsItemDecoration;
 import com.ipk.newbianjapanese.recyclerView_words.WordsRecyclerViewAdapter;
 
 import java.lang.reflect.Type;
@@ -64,6 +65,7 @@ public class MyFragment extends Fragment {
             String json = DataUtils.getJson(this.getContext(), "unit-1-lesson-1-words.json");
             Type listType = new TypeToken<List<WordInfo>>() {}.getType();
             List<WordInfo> dataList = new Gson().fromJson(json, listType );
+            recyclerView_words.addItemDecoration(new WordsItemDecoration(this.getActivity()));
             WordsRecyclerViewAdapter wordsRecyclerViewAdapter = new WordsRecyclerViewAdapter(dataList);
             recyclerView_words.setAdapter(wordsRecyclerViewAdapter);
         }

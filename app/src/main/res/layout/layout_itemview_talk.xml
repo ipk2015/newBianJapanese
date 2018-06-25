@@ -10,6 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAlignment="textEnd"
+        android:lineSpacingExtra="@dimen/line_space_passage"
         android:textSize="@dimen/passage_text_size"
         android:layout_weight="2"/>
     <TextView
@@ -20,6 +21,7 @@
     <TextView
         android:id="@+id/textView_talk_content_item_view"
         android:layout_width="0dp"
+        android:lineSpacingExtra="@dimen/line_space_passage"
         android:layout_height="wrap_content"
         android:textSize="@dimen/passage_text_size"
         android:layout_weight="8"/>

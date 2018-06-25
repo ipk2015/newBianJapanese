@@ -9,5 +9,6 @@
     android:id="@+id/textView_passage_item_view"
     android:layout_width="wrap_content"
     android:textSize="@dimen/passage_text_size"
+    android:lineSpacingExtra="@dimen/line_space_passage"
     android:layout_height="wrap_content"/>
 </LinearLayout>

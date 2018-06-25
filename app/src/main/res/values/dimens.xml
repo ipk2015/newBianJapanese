@@ -10,5 +10,8 @@
     <dimen name="passage_text_size">18sp</dimen>
     <dimen name="common_padding_vertical">5dp</dimen>
     <dimen name="common_padding_horizontal">5dp</dimen>
+    <dimen name="divider_height_words_item">2dp</dimen>
+    <dimen name="bottom_height_words_item">20dp</dimen>
+    <dimen name="line_space_passage">3dp</dimen>
 
 </resources>
