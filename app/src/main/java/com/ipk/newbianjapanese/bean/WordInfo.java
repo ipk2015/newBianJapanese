@@ -47,4 +47,14 @@ public class WordInfo {
     public void setMeaning(String meaning) {
         this.meaning = meaning;
     }
+
+    @Override
+    public String toString() {
+        return "WordInfo{" +
+                "writing='" + writing + '\'' +
+                ", tone='" + tone + '\'' +
+                ", pos='" + pos + '\'' +
+                ", meaning='" + meaning + '\'' +
+                '}';
+    }
 }

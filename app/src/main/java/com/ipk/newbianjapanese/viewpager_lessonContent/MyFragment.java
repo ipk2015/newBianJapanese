@@ -25,13 +25,17 @@ import java.util.List;
 
 public class MyFragment extends Fragment {
     @LayoutRes int mainLayoutRes;
-    public static MyFragment newInstance(@LayoutRes int layoutRes){
+    private String mAssertsFileName;
+
+    public static MyFragment newInstance(@LayoutRes int layoutRes,String assertsFileName){
         MyFragment fragment = new MyFragment();
         Bundle args = new Bundle();
         args.putInt("mainLayoutRes",layoutRes);
+        args.putString("assertsFileName",assertsFileName);
         fragment.setArguments(args);
         return fragment;
     }
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,6 +43,7 @@ public class MyFragment extends Fragment {
         Bundle arguments = getArguments();
         if(null != arguments){
             mainLayoutRes = arguments.getInt("mainLayoutRes");
+            mAssertsFileName = arguments.getString("assertsFileName");
         }
     }
 
@@ -54,7 +59,7 @@ public class MyFragment extends Fragment {
         if(null != recyclerView_passage){
             recyclerView_passage.setHasFixedSize(true);
             recyclerView_passage.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-            String json = DataUtils.getJson(this.getContext(), "unit-1-lesson-1-passage.json");
+            String json = DataUtils.getJson(this.getContext(), mAssertsFileName);
             Type listType = new TypeToken<List<PassageInfo>>() {}.getType();
             List<PassageInfo> dataList = new Gson().fromJson(json, listType );
             PassageRecyclerViewAdapter passageRecyclerViewAdapter = new PassageRecyclerViewAdapter(dataList);
@@ -62,7 +67,7 @@ public class MyFragment extends Fragment {
         }else if(null != recyclerView_words){
             recyclerView_words.setHasFixedSize(true);
             recyclerView_words.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-            String json = DataUtils.getJson(this.getContext(), "unit-1-lesson-1-words.json");
+            String json = DataUtils.getJson(this.getContext(), mAssertsFileName);
             Type listType = new TypeToken<List<WordInfo>>() {}.getType();
             List<WordInfo> dataList = new Gson().fromJson(json, listType );
             recyclerView_words.addItemDecoration(new WordsItemDecoration(this.getActivity()));

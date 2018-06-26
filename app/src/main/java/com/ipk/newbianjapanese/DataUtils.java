@@ -44,4 +44,15 @@ public class DataUtils {
         Gson gson =new Gson();
         return gson.fromJson(json, type);
     }
+
+    /**
+     * 拼接成指定单元指定课的资源文件名
+     * @param unitIndex
+     * @param classIndex
+     * @param fileType  文件说明，要拼接在文件名最后
+     * @return
+     */
+    public static String getAssertsFileName(int unitIndex,int classIndex,String fileType){
+        return "unit-"+(unitIndex+1)+"-lesson-"+(classIndex+1)+"-"+fileType+".json";
+    }
 }

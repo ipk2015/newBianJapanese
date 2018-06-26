@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -31,8 +32,7 @@ public class LessonContentActivity extends AppCompatActivity {
     private TextView textView_content_layout_passage;
 
     {
-        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage));
-        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_words));
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +43,20 @@ public class LessonContentActivity extends AppCompatActivity {
         viewPager = this.<ViewPager>findViewById(R.id.viewPager);
         textView_lessonTitle = (TextView) toolBar_lesson.findViewById(R.id.textView_toolbar_title_lesson);
 
-        initToolbar();
-        initTabLayout();
         String stringExtra = getIntent().getStringExtra(MainActivity.Intent_extra_class_info);
         mSimpleClassInfo = new Gson().fromJson(stringExtra, SimpleClassInfo.class);
         textView_lessonTitle.setText(mSimpleClassInfo.getClassTitle());
+
+        Log.e("fyp-mSimpleClassInfo",mSimpleClassInfo.toString());
+        int unitIndex = mSimpleClassInfo.getUnitIndex();
+        int classIndex = mSimpleClassInfo.getClassIndex();
+
+        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage,DataUtils.getAssertsFileName(unitIndex,classIndex,"passage")));
+        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage_translate,DataUtils.getAssertsFileName(unitIndex,classIndex,"passage-translate")));
+        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_words,DataUtils.getAssertsFileName(unitIndex, classIndex,"words")));
+        initToolbar();
+        initTabLayout();
+
     }
     private void initToolbar(){
         setSupportActionBar(toolBar_lesson);
@@ -84,7 +93,8 @@ public class LessonContentActivity extends AppCompatActivity {
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                Fragment fragment = MyFragment.newInstance(layoutList.get(position).layoutRes);
+                MyPageModel myPageModel = layoutList.get(position);
+                Fragment fragment = MyFragment.newInstance(myPageModel.layoutRes,myPageModel.fileName);
                 return fragment;
             }
 

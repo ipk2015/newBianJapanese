@@ -59,4 +59,14 @@ public class PassageInfo {
     public void setType(int type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "PassageInfo{" +
+                "passage='" + passage + '\'' +
+                ", talkContent='" + talkContent + '\'' +
+                ", talkName='" + talkName + '\'' +
+                ", type=" + type +
+                '}';
+    }
 }

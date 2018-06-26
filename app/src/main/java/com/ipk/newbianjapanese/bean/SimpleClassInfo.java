@@ -61,4 +61,15 @@ public class SimpleClassInfo {
     public boolean isLastClassInUnit(){
         return classIndex == groupLength-1;
     }
+
+    @Override
+    public String toString() {
+        return "SimpleClassInfo{" +
+                "unitIndex=" + unitIndex +
+                ", classIndex=" + classIndex +
+                ", classTitle='" + classTitle + '\'' +
+                ", unitTitle='" + unitTitle + '\'' +
+                ", groupLength=" + groupLength +
+                '}';
+    }
 }
