@@ -9,5 +9,6 @@
     <color name="formFontColor">#333333</color>
     <color name="mainBlueColor">#198bff</color>
     <color name="mainYellowColor">#00FF99</color>
+    <color name="grammarNameColor">#869C7C</color>
 
 </resources>

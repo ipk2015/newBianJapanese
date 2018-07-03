@@ -12,14 +12,14 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.ipk.newbianjapanese.bean.SimpleClassInfo;
-import com.ipk.newbianjapanese.recyclerView_unit.MyRecyclerViewAdapter;
-import com.ipk.newbianjapanese.recyclerView_unit.UnitClassDecoration;
+import com.ipk.newbianjapanese.view.UnitClassRecyclerViewAdapter;
+import com.ipk.newbianjapanese.view.UnitClassDecoration;
 
 import java.lang.reflect.Type;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity implements MyRecyclerViewAdapter.OnItemClickListener{
+public class MainActivity extends AppCompatActivity implements UnitClassRecyclerViewAdapter.OnItemClickListener{
     public static String Intent_extra_class_info = "classInfo";
     private Toolbar toolbar;
     private RecyclerView recyclerView;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements MyRecyclerViewAda
 //            SimpleClassInfo simpleClassInfo = new SimpleClassInfo(i/5,i%5,5,"第"+(i/5+1)+"单元","第"+(i%5+1)+"课");
 //            mDataset.add(simpleClassInfo);
 //        }
-        MyRecyclerViewAdapter myRecyclerViewAdapter = new MyRecyclerViewAdapter(mDataset);
+        UnitClassRecyclerViewAdapter myRecyclerViewAdapter = new UnitClassRecyclerViewAdapter(mDataset);
         myRecyclerViewAdapter.setOnItemClickListener(this);
         recyclerView.setAdapter(myRecyclerViewAdapter);
 

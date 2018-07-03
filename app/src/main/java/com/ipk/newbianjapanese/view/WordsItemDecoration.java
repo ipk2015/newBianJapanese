@@ -1,4 +1,4 @@
-package com.ipk.newbianjapanese.recyclerView_words;
+package com.ipk.newbianjapanese.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -15,11 +15,13 @@ public class WordsItemDecoration extends RecyclerView.ItemDecoration {
     private int mDividerHeight;
     private int mBottomHeight;
     private Paint mPaint;
+    private int mBgColor;
     public WordsItemDecoration(Context context) {
         mDividerHeight = (int) context.getResources().getDimension(R.dimen.divider_height_words_item);
         mBottomHeight = (int) context.getResources().getDimension(R.dimen.bottom_height_words_item);
         mPaint = new Paint();
         mPaint.setColor(Color.WHITE);
+        mBgColor = context.getResources().getColor(R.color.greyBgColor);
     }
 
     @Override
@@ -55,16 +57,28 @@ public class WordsItemDecoration extends RecyclerView.ItemDecoration {
             right = parent.getWidth() - parent.getPaddingRight();
             bottom = view.getTop();
             top = (int) (bottom - mDividerHeight);
+            mPaint.setColor(Color.WHITE);
+            //默认所有item的顶部都有一条白线
             c.drawRect(left, top, right, bottom, mPaint);
 
             childAdapterPosition = parent.getChildAdapterPosition(view);
             if(childAdapterPosition == 0){
-                top = (int) (bottom - mBottomHeight);
+                //第一个item在白线之上再加宽一部分灰色背景
+                bottom = top;
+                top = bottom - mBottomHeight + mDividerHeight;
+                mPaint.setColor(mBgColor);
                 c.drawRect(left, top, right, bottom, mPaint);
             }
             if (childAdapterPosition == itemCount-1){
+                //最后一个时，先画一条白线
                 top = view.getBottom();
-                bottom = top + mBottomHeight;
+                bottom = top + mDividerHeight;
+                mPaint.setColor(Color.WHITE);
+                c.drawRect(left, top, right, bottom, mPaint);
+                //再在白线下面画一个灰色背景矩形
+                top = bottom;
+                bottom = top + mBottomHeight - mDividerHeight;
+                mPaint.setColor(mBgColor);
                 c.drawRect(left, top, right, bottom, mPaint);
             }
 

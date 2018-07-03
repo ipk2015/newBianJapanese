@@ -1,4 +1,4 @@
-package com.ipk.newbianjapanese.recyclerView_unit;
+package com.ipk.newbianjapanese.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

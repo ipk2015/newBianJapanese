@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView_grammar_name_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/line_space_passage"
+        android:background="@color/grammarNameColor"
+        android:paddingVertical="@dimen/common_padding_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:textSize="@dimen/passage_text_size"/>
+    <TextView
+        android:id="@+id/textView_grammar_explanation_item_view"
+        android:layout_width="match_parent"
+        android:lineSpacingExtra="@dimen/line_space_passage"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/common_padding_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:textSize="@dimen/passage_text_size"/>
+    <TextView
+        android:id="@+id/textView_grammar_example_item_view"
+        android:layout_width="match_parent"
+        android:lineSpacingExtra="@dimen/line_space_passage"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/common_padding_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:textSize="@dimen/passage_text_size"/>
+</LinearLayout>

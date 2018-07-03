@@ -1,4 +1,4 @@
-package com.ipk.newbianjapanese.viewpager_lessonContent;
+package com.ipk.newbianjapanese.view.viewpager_lessonContent;
 
 import android.support.annotation.LayoutRes;
 import android.support.annotation.StringRes;

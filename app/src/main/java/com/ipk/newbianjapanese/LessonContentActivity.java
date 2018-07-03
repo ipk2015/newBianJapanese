@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.ipk.newbianjapanese.bean.SimpleClassInfo;
-import com.ipk.newbianjapanese.viewpager_lessonContent.MyFragment;
-import com.ipk.newbianjapanese.viewpager_lessonContent.MyPageModel;
+import com.ipk.newbianjapanese.view.viewpager_lessonContent.MyFragment;
+import com.ipk.newbianjapanese.view.viewpager_lessonContent.MyPageModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,9 +31,6 @@ public class LessonContentActivity extends AppCompatActivity {
     private TextView textView_lessonTitle;
     private TextView textView_content_layout_passage;
 
-    {
-
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +51,8 @@ public class LessonContentActivity extends AppCompatActivity {
         layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage,DataUtils.getAssertsFileName(unitIndex,classIndex,"passage")));
         layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage_translate,DataUtils.getAssertsFileName(unitIndex,classIndex,"passage-translate")));
         layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_words,DataUtils.getAssertsFileName(unitIndex, classIndex,"words")));
+        layoutList.add(new MyPageModel(R.layout.layout_grammar,R.string.tab_title_grammar,DataUtils.getAssertsFileName(unitIndex, classIndex,"grammar")));
+        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_additional_words,DataUtils.getAssertsFileName(unitIndex, classIndex,"additional-words")));
         initToolbar();
         initTabLayout();
 

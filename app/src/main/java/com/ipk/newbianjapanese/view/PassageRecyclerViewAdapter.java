@@ -1,4 +1,4 @@
-package com.ipk.newbianjapanese.recyclerView_passage;
+package com.ipk.newbianjapanese.view;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

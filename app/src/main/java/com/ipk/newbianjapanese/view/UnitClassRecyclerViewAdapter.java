@@ -1,4 +1,4 @@
-package com.ipk.newbianjapanese.recyclerView_unit;
+package com.ipk.newbianjapanese.view;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import com.ipk.newbianjapanese.bean.SimpleClassInfo;
 
 import java.util.List;
 
-public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> implements View.OnClickListener{
+public class UnitClassRecyclerViewAdapter extends RecyclerView.Adapter<UnitClassRecyclerViewAdapter.ViewHolder> implements View.OnClickListener{
 
 
     @Override
@@ -41,7 +41,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     }
 
     public List<SimpleClassInfo> mDataset;
-    public MyRecyclerViewAdapter(List<SimpleClassInfo> myDateset){
+    public UnitClassRecyclerViewAdapter(List<SimpleClassInfo> myDateset){
         mDataset = myDateset;
     }
 
@@ -51,7 +51,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     }
 
     @Override
-    public MyRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public UnitClassRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_class_title,parent,false);
         ViewHolder viewHolder = new ViewHolder(view);
         viewHolder.mItemView.setOnClickListener(this);
@@ -59,7 +59,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     }
 
     @Override
-    public void onBindViewHolder(MyRecyclerViewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(UnitClassRecyclerViewAdapter.ViewHolder holder, int position) {
         holder.mItemView.setTag(position);
         holder.mTextView.setText(mDataset.get(position).getClassTitle());
     }
