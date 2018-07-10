@@ -40,9 +40,9 @@ public class GrammarRecyclerViewAdapter extends RecyclerView.Adapter<GrammarRecy
     @Override
     public void onBindViewHolder(GrammarRecyclerViewAdapter.ViewHolder holder, int position) {
         GrammarInfo grammarInfo = mDataList.get(position);
-        holder.nameTextView.setText(grammarInfo.getName());
-        holder.explanationTextView.setText(grammarInfo.getExplanation());
-        holder.exampleTextView.setText(grammarInfo.getExample());
+        holder.nameTextView.setText((position+1)+"."+grammarInfo.getName());
+        holder.explanationTextView.setText("☼☼释义☼☼：\n"+grammarInfo.getExplanation());
+        holder.exampleTextView.setText("☼☼用例☼☼：\n"+grammarInfo.getExample());
     }
 
     @Override
