@@ -47,12 +47,13 @@ public class DataUtils {
 
     /**
      * 拼接成指定单元指定课的资源文件名
-     * @param unitIndex
-     * @param classIndex
+     * @param bookIndex 第几册，0为第一册
+     * @param unitIndex 第几单元，0为第一单元
+     * @param classIndex 第几课，0为第一课
      * @param fileType  文件说明，要拼接在文件名最后
      * @return
      */
-    public static String getAssertsFileName(int unitIndex,int classIndex,String fileType){
-        return "unit-"+(unitIndex+1)+"-lesson-"+(classIndex+1)+"-"+fileType+".json";
+    public static String getAssertsFileName(int bookIndex,int unitIndex,int classIndex,String fileType){
+        return "book-"+(bookIndex+1)+"-unit-"+(unitIndex+1)+"-lesson-"+(classIndex+1)+"-"+fileType+".json";
     }
 }

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements UnitClassRecycler
         recyclerView.setHasFixedSize(true);
         mLinearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLinearLayoutManager);
-        String json = DataUtils.getJson(this, "book1.json");
+        String json = DataUtils.getJson(this, "book-1.json");
         Type listType = new TypeToken<List<SimpleClassInfo>>() {}.getType();
         //这里的json是字符串类型 = jsonArray.toString();
         mDataset = new Gson().fromJson(json, listType );

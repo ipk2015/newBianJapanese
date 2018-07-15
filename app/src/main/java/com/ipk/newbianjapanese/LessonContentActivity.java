@@ -45,14 +45,15 @@ public class LessonContentActivity extends AppCompatActivity {
         textView_lessonTitle.setText(mSimpleClassInfo.getClassTitle());
 
         Log.e("fyp-mSimpleClassInfo",mSimpleClassInfo.toString());
+        int bookIndex = mSimpleClassInfo.getBookIndex();
         int unitIndex = mSimpleClassInfo.getUnitIndex();
         int classIndex = mSimpleClassInfo.getClassIndex();
 
-        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage,DataUtils.getAssertsFileName(unitIndex,classIndex,"passage")));
-        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage_translate,DataUtils.getAssertsFileName(unitIndex,classIndex,"passage-translate")));
-        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_words,DataUtils.getAssertsFileName(unitIndex, classIndex,"words")));
-        layoutList.add(new MyPageModel(R.layout.layout_grammar,R.string.tab_title_grammar,DataUtils.getAssertsFileName(unitIndex, classIndex,"grammar")));
-        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_additional_words,DataUtils.getAssertsFileName(unitIndex, classIndex,"additional-words")));
+        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage,DataUtils.getAssertsFileName(bookIndex,unitIndex,classIndex,"passage")));
+        layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage_translate,DataUtils.getAssertsFileName(bookIndex,unitIndex,classIndex,"passage-translate")));
+        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_words,DataUtils.getAssertsFileName(bookIndex,unitIndex, classIndex,"words")));
+        layoutList.add(new MyPageModel(R.layout.layout_grammar,R.string.tab_title_grammar,DataUtils.getAssertsFileName(bookIndex,unitIndex, classIndex,"grammar")));
+        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_additional_words,DataUtils.getAssertsFileName(bookIndex,unitIndex, classIndex,"additional-words")));
         initToolbar();
         initTabLayout();
 
