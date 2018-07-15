@@ -5,6 +5,7 @@
     <dimen name="unit_title_margin_left">10dp</dimen>
     <dimen name="unit_title_size">20sp</dimen>
     <dimen name="class_title_size_list">20sp</dimen>
+    <dimen name="class_title_size_lesson_page">18sp</dimen>
     <dimen name="class_title_height_list">40dp</dimen>
     <dimen name="toolbar_title_size">20sp</dimen>
     <dimen name="passage_text_size">18sp</dimen>

@@ -1,6 +1,7 @@
 package com.ipk.newbianjapanese.view;
 
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,13 @@ public class GrammarRecyclerViewAdapter extends RecyclerView.Adapter<GrammarRecy
         GrammarInfo grammarInfo = mDataList.get(position);
         holder.nameTextView.setText((position+1)+"."+grammarInfo.getName());
         holder.explanationTextView.setText("☼☼释义☼☼：\n"+grammarInfo.getExplanation());
-        holder.exampleTextView.setText("☼☼用例☼☼：\n"+grammarInfo.getExample());
+        String example = grammarInfo.getExample();
+        if(TextUtils.isEmpty(example)){
+            holder.exampleTextView.setText("");
+        }else{
+            holder.exampleTextView.setText("☼☼用例☼☼：\n"+ example);
+        }
+
     }
 
     @Override
