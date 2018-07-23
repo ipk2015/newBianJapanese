@@ -53,7 +53,7 @@ public class LessonContentActivity extends AppCompatActivity {
         layoutList.add(new MyPageModel(R.layout.layout_passage,R.string.tab_title_passage_translate,DataUtils.getAssertsFileName(bookIndex,unitIndex,classIndex,"passage-translate")));
         layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_words,DataUtils.getAssertsFileName(bookIndex,unitIndex, classIndex,"words")));
         layoutList.add(new MyPageModel(R.layout.layout_grammar,R.string.tab_title_grammar,DataUtils.getAssertsFileName(bookIndex,unitIndex, classIndex,"grammar")));
-        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_additional_words,DataUtils.getAssertsFileName(bookIndex,unitIndex, classIndex,"additional-words")));
+        layoutList.add(new MyPageModel(R.layout.layout_words,R.string.tab_title_additional_words,DataUtils.getAssertsFileName(bookIndex,unitIndex, classIndex,"words-additional")));
         initToolbar();
         initTabLayout();
 
