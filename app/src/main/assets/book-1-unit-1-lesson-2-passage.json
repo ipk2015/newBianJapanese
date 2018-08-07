@@ -1,0 +1,80 @@
+[
+  {
+    "type":"１",
+    "passage":"（铃木帮王小华和小金拿行李去她们的房间。）"
+  },
+  {
+    "type":"0",
+    "talkName":"鈴木",
+    "talkContent":"王さん、これは　部屋の　かぎです。この　かばんは　誰のですか。"
+  },
+  {
+    "type":"0",
+    "talkName":"キム",
+    "talkContent":"その　かばんは　わたしのです。どうも　すみません。"
+  },
+  {
+    "type":"0",
+    "talkName":"鈴木",
+    "talkContent":"この　帽子は？"
+  },
+  {
+    "type":"0",
+    "talkName":"王小華",
+    "talkContent":"あ、それは　わたしのです。ありがとうございます。"
+  },
+  {
+    "type":"0",
+    "talkName":"鈴木",
+    "talkContent":"いいえ、どういたしまして。"
+  },
+  {
+    "type":"１",
+    "passage":"（王小华和小金开始整理自己的物品。）"
+  },
+  {
+    "type":"0",
+    "talkName":"キム",
+    "talkContent":"王さん、それは　何でしか。"
+  },
+  {
+    "type":"0",
+    "talkName":"王小華",
+    "talkContent":"あ、これは　アルバムです。この　写真は　家族の　写真です。"
+  },
+  {
+    "type":"0",
+    "talkName":"キム",
+    "talkContent":"３人家族ですね。"
+  },
+  {
+    "type":"0",
+    "talkName":"王小華",
+    "talkContent":"はい、そうです。父は　公務員です。母は　看護婦です。キムさんは。何人家族ですか。"
+  },
+  {
+    "type":"0",
+    "talkName":"キム",
+    "talkContent":"５人家族です。父、母、姉、弟　と　わたしです。"
+  },
+  {
+    "type":"0",
+    "talkName":"王小華",
+    "talkContent":"お父さんの　お仕事は　何ですか。"
+  },
+  {
+    "type":"0",
+    "talkName":"キム",
+    "talkContent":"医者です。"
+  },
+  {
+    "type":"0",
+    "talkName":"王小華",
+    "talkContent":"お母さんは？。"
+  },
+  {
+    "type":"0",
+    "talkName":"キム",
+    "talkContent":"母は　小学校の　先生でした。今は　主婦です。"
+  }
+]
